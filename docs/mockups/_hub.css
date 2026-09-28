@@ -69,3 +69,11 @@
 .dock .d-ico { width: 60px; height: 60px; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 28px;
   background: light-dark(rgba(255, 255, 255, .75), rgba(40, 44, 52, .8)); border: 1px solid var(--border); color: var(--text); }
 .page-dots { margin-top: 18px; }
+
+/* 폴드8 펼친 화면(940x710 가로)용 윗줄: 왼쪽 반은 시계, 오른쪽 반은 검색 — 세로 공간을 아낀다 */
+.home-top { display: flex; align-items: flex-end; justify-content: space-between; padding-right: 28px; }
+.home-top .clock-widget { padding-top: 4px; }
+.home-top .search-pill { margin: 0 0 4px; width: 400px; flex: none; }
+.home-top + .app-folder { margin-top: 12px; }
+.home-top ~ .dock { margin-top: 18px; }
+.home-top ~ .page-dots { margin-top: 10px; }
