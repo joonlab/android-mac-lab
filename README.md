@@ -17,9 +17,9 @@
 <!-- VIDEO:START -->
 ### 홍보 영상
 
-[![홍보 영상 (가로 16:9, 120초) — 누르면 재생 화면으로 갑니다](docs/images/video-poster.png)](docs/video/promo_16x9.mp4)
+[![홍보 영상 미리보기 — 누르면 전체 영상(가로 16:9, 120초)이 재생됩니다](docs/images/video-preview.webp)](https://pub-81d14e6ebfb841109968e9c0ee057d1b.r2.dev/android-mac-lab/videos/android-mac-lab/android-mac-lab_16x9.mp4)
 
-▶ [가로 16:9 · 120초](docs/video/promo_16x9.mp4) · ▶ [세로 9:16 · 90초](docs/video/promo_9x16.mp4) — 영상 속 화면은 설명용 목업입니다.
+▶ [가로 16:9 · 120초](https://pub-81d14e6ebfb841109968e9c0ee057d1b.r2.dev/android-mac-lab/videos/android-mac-lab/android-mac-lab_16x9.mp4) · ▶ [세로 9:16 · 90초](https://pub-81d14e6ebfb841109968e9c0ee057d1b.r2.dev/android-mac-lab/videos/android-mac-lab/android-mac-lab_9x16.mp4) — 영상 속 화면은 설명용 목업이고, 책상 사진은 AI로 만든 배경입니다.
 <!-- VIDEO:END -->
 
 이 저장소는 추커톤(AI & Beyond 추석 해커톤 2026) 출품작입니다.
