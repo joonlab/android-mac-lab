@@ -200,7 +200,8 @@ svg.i { width: 1em; height: 1em; flex: none; display: inline-block; vertical-ali
 
 /* ==========================================================================
    기기 프레임 — 폴드8
-   화면 치수(dp): 커버 392 x 921 (≈1:2.35), 펼침 832 x 940 (≈1:1.13)
+   화면 치수(dp): 커버 480 x 758 (0.63:1, 실기 1248x1972px), 펼침 940 x 710 (1.32:1 가로, 실기 2448x1848px)
+   펼침을 세로로 들면 .fold-open.portrait (710 x 940, 접힘선이 가로)
    크기는 style="--zoom:.76" 로 줄인다. 커버와 펼침에 같은 zoom 을 주면 실제 크기 비례가 맞다.
    ========================================================================== */
 .fold-cover, .fold-open {
@@ -214,8 +215,9 @@ svg.i { width: 1em; height: 1em; flex: none; display: inline-block; vertical-ali
 }
 .fold-cover { border-radius: 48px; }
 .fold-open { border-radius: 36px; }
-.fold-cover > .screen { width: 392px; height: 921px; border-radius: 39px; }
-.fold-open > .screen { width: 832px; height: 940px; border-radius: 27px; }
+.fold-cover > .screen { width: 480px; height: 758px; border-radius: 34px; }
+.fold-open > .screen { width: 940px; height: 710px; border-radius: 27px; }
+.fold-open.portrait > .screen { width: 710px; height: 940px; }
 .screen {
   position: relative; overflow: hidden;
   display: flex; flex-direction: column;
@@ -241,6 +243,10 @@ svg.i { width: 1em; height: 1em; flex: none; display: inline-block; vertical-ali
     light-dark(rgba(0, 0, 0, .035), rgba(255, 255, 255, .03)) 58%,
     transparent 100%);
 }
+.fold-open.portrait > .screen::before { top: calc(50% - 12px); bottom: auto; left: 0; right: 0; width: auto; height: 24px;
+  background: linear-gradient(180deg, transparent 0%, light-dark(rgba(0,0,0,.035), rgba(255,255,255,.03)) 42%,
+    light-dark(rgba(255,255,255,.07), rgba(0,0,0,.16)) 50%, light-dark(rgba(0,0,0,.035), rgba(255,255,255,.03)) 58%, transparent 100%); }
+.fold-open.portrait > .screen::after { top: calc(25% - 5px); left: 12px; }
 .fold-open.no-crease > .screen::before, .fold-open.no-hole > .screen::after,
 .fold-cover.no-hole > .screen::after { display: none; }
 

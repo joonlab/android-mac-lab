@@ -83,8 +83,8 @@ node $KIT/shot.mjs --batch some/dir --out other/dir --scale 1
 - 토큰 변수: `--bg --panel --panel2 --raised --border --text --dim --accent --accent-tint --on-accent --ok --warn --warn-text --danger`. 화면 안에서 색을 직접 쓰지 말고 이 변수만 씁니다.
 
 ### 기기 프레임
-- `.fold-cover > .screen` — 커버 392 x 921dp(≈1:2.35), 둥근 모서리, 가운데 카메라 홀.
-- `.fold-open > .screen` — 펼침 832 x 940dp(≈1:1.13), 가운데 접힘선(은은하게), 오른쪽 위 카메라.
+- `.fold-cover > .screen` — 커버 480 x 758dp(0.63:1, 실기 1248x1972px), 둥근 모서리, 가운데 카메라 홀. ⚠️ 폴드8 커버는 책처럼 넓다 — 옛 폴드의 길쭉한 1:2.35 가 아니다.
+- `.fold-open > .screen` — 펼침 940 x 710dp(1.32:1 **가로**, 실기 2448x1848px), 가운데 세로 접힘선, 오른쪽 위 카메라. 세로로 들면 `.fold-open.portrait`(710 x 940, 접힘선 가로).
 - `.no-crease` `.no-hole` 로 접힘선·카메라 홀 끄기.
 - 화면 안은 **1px = 1dp** 로 씁니다(거터 16, 머리줄 56, 본문 14.5).
 - 화면 안 뼈대: `.status-bar`(비워두면 시각·신호·배터리 자동, `data-time="2:30" data-batt="82"`) → `.app-bar` → `.content` 또는 `.two-pane`(`.pane` 두 개, `.list-detail` 은 360 + 나머지) → `.input-bar` → `.nav-handle`.
