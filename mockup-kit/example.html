@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="shot" content="w=1600,h=1000,scale=2">
+<title>구성 예시</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<style>
+  .layout { position: absolute; top: 30px; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; gap: 36px; }
+  .mac-col { width: 440px; display: flex; flex-direction: column; gap: 0; align-self: stretch; padding-top: 190px; justify-content: center; }
+  .mac-col .mac-notification { width: 100%; margin-bottom: 20px; }
+  .drop { position: absolute; top: 34px; right: 16px; width: 300px; z-index: 25; }
+  .clip-text { font-size: 16px; line-height: 26px; white-space: pre-line; }
+</style>
+</head>
+<body>
+<div class="canvas app-clipbridge">
+
+  <!-- 맥 메뉴바 -->
+  <div class="mac-menubar">
+    <span class="app-name">Finder</span><span>파일</span><span>편집</span><span>보기</span><span>이동</span><span>윈도우</span>
+    <div class="extras">
+      <span class="extra active"><img data-app="clipbridge" alt=""></span>
+      <span class="extra"><i data-icon="wifi"></i></span>
+      <span class="extra"><i data-icon="battery"></i></span>
+      <span class="extra"><i data-icon="search"></i></span>
+      <span class="clock">9월 28일 (일) 오후 2:30</span>
+    </div>
+  </div>
+
+  <div class="mac-menu drop">
+        <div class="m-status"><span class="dot ok"></span><span>폰 연결됨 · Fold</span></div>
+        <div class="m-sep"></div>
+        <div class="m-head">최근 받은 것</div>
+        <div class="m-item hl"><i data-icon="file-text"></i>장보기 목록<span class="kbd">⌘1</span></div>
+        <div class="m-item"><i data-icon="image"></i>화이트보드 사진<span class="kbd">⌘2</span></div>
+        <div class="m-item"><i data-icon="link"></i>example.com/recipe/42<span class="kbd">⌘3</span></div>
+        <div class="m-sep"></div>
+        <div class="m-item"><span class="check">✓</span>자동으로 폰에 보내기</div>
+        <div class="m-item"><span class="check"></span>설정…<span class="kbd">⌘,</span></div>
+      </div>
+
+  <div class="layout">
+
+    <!-- 폴드 펼침 -->
+    <div>
+      <div class="fold-open" style="--zoom:.78">
+        <div class="screen">
+          <div class="status-bar" data-time="2:30"></div>
+          <div class="app-bar">
+            <img class="mark" data-app="clipbridge" alt="">
+            <span class="title">ClipBridge</span>
+            <span class="status"><span class="dot ok"></span>맥 연결됨 · 3초 전 받음</span>
+            <span class="spacer"></span>
+            <span class="icon-btn"><i data-icon="search"></i></span>
+            <span class="theme-btn"><i data-icon="sun"></i><span>자동</span></span>
+          </div>
+          <div class="two-pane list-detail">
+            <div class="pane">
+              <div class="chips"><span class="chip on">전체</span><span class="chip">글</span><span class="chip">링크</span><span class="chip">이미지</span></div>
+              <div class="section-label">오늘</div>
+              <div class="list">
+                <div class="list-row selected"><i class="ico" data-icon="file-text"></i><div class="grow"><div class="card-title ellipsis">장보기 목록</div><div class="meta ellipsis">맥 → 폰 · 오후 2:29</div></div></div>
+                <div class="list-row"><i class="ico" data-icon="file-text"></i><div class="grow"><div class="card-title ellipsis">회의 메모 — 금요일 발표 순서</div><div class="meta ellipsis">폰 → 맥 · 오후 1:12</div></div></div>
+                <div class="list-row"><i class="ico" data-icon="link"></i><div class="grow"><div class="card-title ellipsis">example.com/recipe/42</div><div class="meta ellipsis">맥 → 폰 · 오전 11:40</div></div></div>
+                <div class="list-row"><i class="ico" data-icon="image"></i><div class="grow"><div class="card-title ellipsis">화이트보드 사진</div><div class="meta ellipsis">폰 → 맥 · 오전 10:05</div></div></div>
+              </div>
+              <div class="section-label">어제</div>
+              <div class="list">
+                <div class="list-row"><i class="ico" data-icon="file-text"></i><div class="grow"><div class="card-title ellipsis">민지 생일 선물 후보</div><div class="meta ellipsis">폰 → 맥 · 오후 8:47</div></div></div>
+                <div class="list-row"><i class="ico" data-icon="file-text"></i><div class="grow"><div class="card-title ellipsis">택배 운송장 번호</div><div class="meta ellipsis">맥 → 폰 · 오후 3:20</div></div></div>
+              </div>
+            </div>
+            <div class="pane">
+              <div class="row"><span class="tag accent">글</span><span class="meta">맥에서 복사 · 오후 2:29 · 58자</span></div>
+              <div class="t-hero">장보기 목록</div>
+              <div class="card raised">
+                <div class="clip-text">우유 2개
+달걀 한 판
+두부, 대파
+사과 1봉지
+커피 원두 (디카페인)</div>
+              </div>
+              <div class="row gap-8">
+                <span class="btn btn-primary"><i data-icon="copy"></i>폰에 복사됨</span>
+                <span class="btn"><i data-icon="share"></i>공유</span>
+                <span class="btn btn-ghost"><i data-icon="pin"></i>고정</span>
+              </div>
+              <div class="card tint" style="margin-top:8px">
+                <div class="card-row"><span class="ico"><i data-icon="laptop"></i></span><div class="grow"><div class="card-title">맥과 자동으로 주고받는 중</div><div class="meta">복사하면 3초 안에 반대편 클립보드로 갑니다</div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-handle"></div>
+        </div>
+      </div>
+      <div class="device-label">펼친 화면</div>
+    </div>
+
+    <!-- 폴드 커버 -->
+    <div>
+      <div class="fold-cover" style="--zoom:.78">
+        <div class="screen">
+          <div class="status-bar" data-time="2:30"></div>
+          <div class="app-bar">
+            <img class="mark" data-app="clipbridge" alt="">
+            <span class="title">ClipBridge</span>
+            <span class="spacer"></span>
+            <span class="theme-btn"><i data-icon="sun"></i><span>자동</span></span>
+          </div>
+          <div class="content">
+            <div class="card ok">
+              <div class="card-row"><span class="dot ok"></span><span class="card-title">맥 연결됨</span></div>
+              <div class="meta">수신 서버 동작 중 · 3초 전 받음</div>
+            </div>
+            <div class="section-label">방금 받은 것</div>
+            <div class="card raised">
+              <div class="card-title">장보기 목록</div>
+              <div class="body dim">우유 2개, 달걀 한 판, 두부, 대파…</div>
+              <div class="row gap-8" style="margin-top:6px"><span class="btn btn-primary grow"><i data-icon="copy"></i>복사</span><span class="btn"><i data-icon="share"></i></span></div>
+            </div>
+            <div class="section-label">설정</div>
+            <div class="card dense" style="gap:0">
+              <div class="toggle-row"><div class="grow"><div class="label-main">자동으로 맥에 보내기</div><div class="caption">복사하면 바로 보냄</div></div><span class="switch on"></span></div>
+              <div class="toggle-row"><div class="grow"><div class="label-main">이미지도 보내기</div><div class="caption">와이파이에서만</div></div><span class="switch"></span></div>
+            </div>
+            <div class="section-label">최근</div>
+            <div class="list">
+              <div class="list-row"><i class="ico" data-icon="file-text"></i><div class="grow"><div class="label ellipsis">회의 메모 — 금요일 발표 순서</div><div class="caption">오후 1:12</div></div></div>
+              <div class="list-row"><i class="ico" data-icon="link"></i><div class="grow"><div class="label ellipsis">example.com/recipe/42</div><div class="caption">오전 11:40</div></div></div>
+            </div>
+          </div>
+          <div class="input-bar">
+            <div class="input placeholder">맥으로 보낼 글…</div>
+            <span class="send-btn"><i data-icon="send"></i></span>
+          </div>
+          <div class="nav-handle"></div>
+        </div>
+      </div>
+      <div class="device-label">커버 화면</div>
+    </div>
+
+    <!-- 맥 -->
+    <div class="mac-col">
+      <div class="mac-notification">
+        <img data-app="clipbridge" alt="">
+        <div>
+          <div class="n-top"><span class="n-title">ClipBridge</span><span class="n-time">지금</span></div>
+          <div class="n-body">폰에서 이미지를 받았습니다 · 화이트보드 사진</div>
+          <div class="n-actions"><span>열기</span><span>Finder에서 보기</span></div>
+        </div>
+      </div>
+      <div class="terminal">
+        <div class="terminal-bar"><span class="traffic"><i></i><i></i><i></i></span><span class="t-title">clipbridge — zsh</span></div>
+        <div class="terminal-body"><span class="t-prompt">❯</span> <span class="t-b">clipbridge status</span>
+<span class="t-ok">●</span> 수신 서버 동작 중  <span class="t-dim">port 8765</span>
+<span class="t-ok">●</span> 폰 연결됨         <span class="t-dim">마지막 받음 3초 전</span>
+
+<span class="t-prompt">❯</span> <span class="t-b">clipbridge log -n 3</span>
+<span class="t-dim">14:29:51</span>  폰 ← 맥  <span class="t-accent">글</span>    장보기 목록 (58자)
+<span class="t-dim">13:12:07</span>  폰 → 맥  <span class="t-accent">글</span>    회의 메모 — 금요일 발표 순서
+<span class="t-dim">10:05:33</span>  폰 → 맥  <span class="t-accent">이미지</span> 화이트보드 사진 (1.2MB)
+
+<span class="t-prompt">❯</span> <span class="t-cursor"></span></div>
+      </div>
+      <div class="device-label">맥 · 메뉴바와 터미널</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="shot" content="w=1600,h=1000,scale=2">
+<title>부품 카탈로그</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<style>
+  .layout { position: absolute; inset: 0; padding: 40px 36px; display: flex; gap: 40px; align-items: center; justify-content: center; }
+  .mac-stack { display: flex; flex-direction: column; gap: 18px; width: 520px; margin-top: -40px; }
+  .mac-stack .mac-notification { width: 100%; }
+  .qs-top { padding: 6px 4px 2px; display: flex; justify-content: space-between; align-items: center; }
+  .other-app { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+</style>
+</head>
+<body>
+<div class="canvas desk-accent app-foldmic">
+<div class="layout">
+
+  <!-- 1. 커버, 다크: 알림창 + 퀵설정 -->
+  <div>
+    <div class="fold-cover dark app-foldmic" style="--zoom:.8">
+      <div class="screen">
+        <div class="status-bar" data-time="10:24"></div>
+        <div class="content">
+          <div class="qs-top"><span class="t-sheet">빠른 설정</span><span class="icon-btn"><i data-icon="settings"></i></span></div>
+          <div class="qs-panel">
+            <div class="qs-grid">
+              <div class="qs-tile on"><span class="qs-ico"><i data-icon="mic"></i></span><div class="grow"><div class="qs-name">폴드 마이크</div><div class="qs-sub">맥으로 전송 중</div></div></div>
+              <div class="qs-tile"><span class="qs-ico"><i data-icon="wifi"></i></span><div class="grow"><div class="qs-name">Wi-Fi</div><div class="qs-sub">집</div></div></div>
+              <div class="qs-tile"><span class="qs-ico"><i data-icon="bluetooth"></i></span><div class="grow"><div class="qs-name">블루투스</div><div class="qs-sub">꺼짐</div></div></div>
+              <div class="qs-tile"><span class="qs-ico"><i data-icon="clipboard"></i></span><div class="grow"><div class="qs-name">클립 보내기</div><div class="qs-sub">한 번 탭</div></div></div>
+            </div>
+            <div class="qs-slider" style="--v:64%"><i data-icon="sun"></i></div>
+          </div>
+          <div class="section-label">알림</div>
+          <div class="notif-stack">
+            <div class="notif">
+              <div class="notif-head"><img data-app="foldmic" alt=""><span>폴드 마이크</span><span>· 지금</span></div>
+              <div class="notif-title">맥 마이크로 쓰는 중</div>
+              <div class="notif-body">회의 앱이 폰 마이크를 듣고 있습니다 · 12분</div>
+              <div class="notif-actions"><span>일시정지</span><span>끄기</span></div>
+            </div>
+            <div class="notif">
+              <div class="notif-head"><img data-app="foldagent" alt=""><span>폴드 에이전트</span><span>· 3분 전</span></div>
+              <div class="notif-title">장보기 목록 정리 끝</div>
+              <div class="notif-body">품목 5개를 카테고리별로 묶었습니다</div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-handle"></div>
+      </div>
+    </div>
+    <div class="device-label">.fold-cover.dark — 퀵설정·알림</div>
+  </div>
+
+  <!-- 2. 커버, 라이트: 다른 앱 위 오버레이 + 공유 시트 -->
+  <div>
+    <div class="fold-cover app-foldagent" style="--zoom:.8">
+      <div class="screen">
+        <div class="status-bar" data-time="10:24"></div>
+        <div class="app-bar"><span class="icon-btn" style="margin-left:-10px"><i data-icon="arrow-left"></i></span><span class="title">메모</span><span class="spacer"></span><span class="icon-btn"><i data-icon="more-vertical"></i></span></div>
+        <div class="other-app dim-app">
+          <div class="t-hero">회의 메모</div>
+          <div class="meta">금요일 오전 10시 · 민지, 서준</div>
+          <div class="body">1. 발표 순서 정하기<br>2. 자료 마감은 목요일 저녁<br>3. 다음 회의 장소 예약</div>
+        </div>
+        <div class="scrim"></div>
+        <div class="share-sheet">
+          <div class="sheet-handle"></div>
+          <div class="sheet-title">공유</div>
+          <div class="share-preview"><span class="ico" style="font-size:22px;color:var(--dim)"><i data-icon="file-text"></i></span><div class="grow"><div class="card-title ellipsis">회의 메모</div><div class="meta">글 · 64자</div></div></div>
+          <div class="share-targets">
+            <div class="share-target pinned"><img data-app="clipbridge" alt="">맥으로</div>
+            <div class="share-target"><img data-app="foldagent" alt="">에이전트</div>
+            <div class="share-target"><span class="t-ico"><i data-icon="message"></i></span>메시지</div>
+            <div class="share-target"><span class="t-ico"><i data-icon="copy"></i></span>복사</div>
+          </div>
+        </div>
+        <div class="overlay-bubble" style="right:14px; top:120px"><img data-app="foldagent" alt=""></div>
+      </div>
+    </div>
+    <div class="device-label">.share-sheet · .overlay-bubble</div>
+  </div>
+
+  <!-- 3. 맥 부품 -->
+  <div class="mac-stack">
+    <div class="mac-notification">
+      <img data-app="foldmic" alt="">
+      <div>
+        <div class="n-top"><span class="n-title">폴드 마이크</span><span class="n-time">지금</span></div>
+        <div class="n-body">폰 마이크가 연결됐습니다 · 입력 장치로 고를 수 있습니다</div>
+      </div>
+    </div>
+    <div class="mac-window" style="height:270px">
+      <div class="mac-titlebar"><span class="traffic"><i></i><i></i><i></i></span><span class="mac-title">폴드 마이크</span></div>
+      <div class="mac-split" style="grid-template-columns:150px 1fr">
+        <div class="mac-sidebar">
+          <div class="sb-head">보기</div>
+          <div class="sb-item on"><i data-icon="mic"></i>상태</div>
+          <div class="sb-item"><i data-icon="sliders"></i>소리</div>
+          <div class="sb-item"><i data-icon="clock"></i>기록</div>
+        </div>
+        <div class="mac-body">
+          <div class="row"><span class="dot ok"></span><b>폰 마이크 연결됨</b><span class="dim" style="margin-left:auto">지연 38ms</span></div>
+          <div class="card" style="--panel: light-dark(#F5F4FA,#26242E)">
+            <div class="meta">입력 레벨</div>
+            <div class="qs-slider" style="--v:42%;height:12px;padding:0"></div>
+          </div>
+          <div class="row gap-8"><span class="btn btn-primary">일시정지</span><span class="btn">끊기</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="terminal" style="height:170px">
+      <div class="terminal-bar"><span class="traffic"><i></i><i></i><i></i></span><span class="t-title">zsh</span></div>
+      <div class="terminal-body"><span class="t-prompt">❯</span> <span class="t-b">foldmic devices</span>
+<span class="t-ok">●</span> 폴드 마이크     <span class="t-dim">48 kHz · mono</span>
+<span class="t-dim">○</span> 내장 마이크
+<span class="t-prompt">❯</span> <span class="t-cursor"></span></div>
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
