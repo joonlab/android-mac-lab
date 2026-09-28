@@ -1,0 +1,11 @@
+_trash/
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+*.log
+runs/
+_data/
+.env
+.env.*
+!*.example

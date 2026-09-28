@@ -1,0 +1,121 @@
+{
+  "categories": [
+    { "id": "연동", "en": "Continuity", "ko_desc": "맥과 폰 사이에 데이터·소리를 잇는 것" },
+    { "id": "디스플레이", "en": "Display", "ko_desc": "화면을 서로 빌려 쓰는 것" },
+    { "id": "에이전트", "en": "Agents", "ko_desc": "폰에서 AI 에이전트를 부리거나 지켜보는 것" },
+    { "id": "개발도구", "en": "Dev tools", "ko_desc": "이 랩의 앱을 만드는 데 쓴 도구" },
+    { "id": "생활", "en": "Everyday", "ko_desc": "맥과 상관없이 폰에서 쓰는 앱" }
+  ],
+  "projects": [
+    {
+      "name": "clipbridge",
+      "title": "ClipBridge",
+      "repo": "https://github.com/joonlab/clipbridge",
+      "category": "연동",
+      "ko": "폰 앱 하나와 맥 서버 하나로 클립보드·파일·링크·알림·문자를 잇습니다. 맥→폰 클립보드는 복사만 하면 자동입니다.",
+      "en": "An Android app and a macOS server that bridge clipboard, files, links, notifications and SMS over Tailscale.",
+      "status": "동작 확인: Galaxy Z Fold8 (Android 17) · macOS 26",
+      "started": "2026-09-20",
+      "thumb": "docs/images/projects/clipbridge.png"
+    },
+    {
+      "name": "galaxy-ondevice-stt",
+      "title": "galaxy-ondevice-stt",
+      "repo": "https://github.com/joonlab/galaxy-ondevice-stt",
+      "category": "연동",
+      "ko": "맥에서 보낸 오디오를 삼성 음성녹음 앱의 Galaxy AI로 전사하고, 전문을 맥으로 돌려받는 무료 온디바이스 STT입니다.",
+      "en": "Free on-device speech-to-text for a Mac, driving Samsung Voice Recorder's Galaxy AI transcription over adb.",
+      "status": "동작 확인: Galaxy Z Fold8 (Android 17) · macOS 26",
+      "started": "2026-09-20",
+      "thumb": "docs/images/projects/galaxy-ondevice-stt.png"
+    },
+    {
+      "name": "foldmic",
+      "title": "foldmic",
+      "repo": "https://github.com/joonlab/foldmic",
+      "category": "연동",
+      "ko": "폰 마이크를 맥의 시스템 기본 입력으로 바꿉니다. 폰과 맥이 멀리 떨어져 있어도 Tailscale로 이어져 있으면 됩니다.",
+      "en": "Turns the phone's microphone into the Mac's system default input (scrcpy, ffmpeg, BlackHole), switchable from the phone.",
+      "status": "동작 확인: Galaxy Z Fold8 (Android 17) · macOS 26",
+      "started": "2026-09-26",
+      "thumb": "docs/images/projects/foldmic.png"
+    },
+    {
+      "name": "fold-cyberdeck",
+      "title": "fold-cyberdeck",
+      "repo": "https://github.com/joonlab/fold-cyberdeck",
+      "category": "디스플레이",
+      "ko": "맥 본 화면을 폴드8에서 실시간으로 보고 키보드·트랙패드·음성으로 조작하는 사이버덱입니다.",
+      "en": "View the Mac's real desktop on the Fold8 and drive it with keyboard, trackpad gestures and voice (ScreenCaptureKit → H.264 → UDP).",
+      "status": "동작 확인: Galaxy Z Fold8 (Android 17) · macOS 26",
+      "started": "2026-09-21",
+      "thumb": "docs/images/projects/fold-cyberdeck.png"
+    },
+    {
+      "name": "deskpad-fold",
+      "title": "DeskPad Fold",
+      "repo": "https://github.com/joonlab/deskpad-fold",
+      "category": "디스플레이",
+      "ko": "폴드8을 맥 보조모니터로 쓰는 DeskPad 포크입니다. 메뉴바에서 폰 연결·가로/세로·해상도를 고릅니다.",
+      "en": "A DeskPad fork that turns the Fold8 into a secondary Mac display, with connect, rotation and resolution in the menu bar.",
+      "status": "동작 확인: Galaxy Z Fold8 (Android 17) · macOS 26 · Deskreen CE 3.2.16",
+      "started": "2026-09-28",
+      "thumb": "docs/images/projects/deskpad-fold.png"
+    },
+    {
+      "name": "fold-agent",
+      "title": "폴드 에이전트",
+      "repo": "https://github.com/joonlab/fold-agent",
+      "category": "에이전트",
+      "ko": "말로 시키면 폰이 스스로 앱을 열고 누르고 답하는 안드로이드 에이전트입니다. 확인 게이트·재계획·사람 개입이 붙어 있습니다.",
+      "en": "A Claude Code–style agent on the phone: accessibility, on-device speech and an LLM tool loop with confirm gates, re-planning and human takeover.",
+      "status": "동작 확인: Galaxy Z Fold8 (Android 17) · macOS 26",
+      "started": "2026-09-26",
+      "thumb": "docs/images/projects/fold-agent.png"
+    },
+    {
+      "name": "cmux-mobile-remote",
+      "title": "cmux 모바일 관제실",
+      "repo": "https://github.com/joonlab/cmux-mobile-remote",
+      "category": "에이전트",
+      "ko": "폰에서 두 맥의 cmux(Claude Code 세션 수십 개)를 보고, 권한 요청·질문에 답하고, 메시지를 보냅니다.",
+      "en": "See every Claude Code session in cmux on two Macs from the phone, answer permission prompts and questions, and send input.",
+      "status": "동작 확인: Galaxy Z Fold8 (Android 17) · macOS 26",
+      "started": "2026-09-25",
+      "thumb": "docs/images/projects/cmux-mobile-remote.png"
+    },
+    {
+      "name": "fold-claude-history",
+      "title": "Claude 기록",
+      "repo": "https://github.com/joonlab/fold-claude-history",
+      "category": "에이전트",
+      "ko": "두 맥에 쌓인 Claude Code 대화 기록을 폴드8에서 찾고 읽고, 고른 세션을 맥에서 이어가게 합니다.",
+      "en": "A posture-aware Fold8 viewer for Claude Code history on two Macs that can resume a session on a Mac.",
+      "status": "동작 확인: Galaxy Z Fold8 (Android 17) · macOS 26",
+      "started": "2026-09-25",
+      "thumb": "docs/images/projects/fold-claude-history.png"
+    },
+    {
+      "name": "android-cli-app-skill",
+      "title": "android-cli-app-skill",
+      "repo": "https://github.com/joonlab/android-cli-app-skill",
+      "category": "개발도구",
+      "ko": "Android Studio 없이 터미널만으로 Kotlin/Compose 앱을 만들어 무선 adb로 폰에 설치하는 Claude Code 스킬입니다.",
+      "en": "A Claude Code skill that scaffolds, builds and wirelessly installs Kotlin/Compose Android apps from the CLI.",
+      "status": "동작 확인: Galaxy Z Fold8 (Android 17) · macOS 26",
+      "started": "2026-09-22",
+      "thumb": "docs/images/projects/android-cli-app-skill.png"
+    },
+    {
+      "name": "pinback",
+      "title": "핀백",
+      "repo": "https://github.com/joonlab/pinback",
+      "category": "생활",
+      "ko": "지금 있는 곳을 한 번에 저장하고, 차 블루투스가 끊기면 주차 위치를 자동으로 남겨 도보 길찾기로 돌아가게 합니다.",
+      "en": "Save your spot with one tap, auto-save parking when the car's Bluetooth disconnects, and walk back via Naver or Google Maps.",
+      "status": "동작 확인: Galaxy Z Fold8 (Android 17) · macOS 26",
+      "started": "2026-09-24",
+      "thumb": "docs/images/projects/pinback.png"
+    }
+  ]
+}

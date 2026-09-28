@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="shot" content="w=1600,h=1000,scale=2">
+<title>android-mac-lab 히어로</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<link rel="stylesheet" href="_hub.css">
+<style>
+  .layout { position: absolute; top: 30px; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; gap: 44px; }
+  .mac-col { width: 600px; display: flex; flex-direction: column; gap: 18px; }
+  .mac-col .terminal { height: 356px; }
+  .mac-col .mac-notification { width: 100%; }
+  .bridge { display: flex; align-items: center; gap: 10px; color: var(--mac-dim); font-size: 14px; font-weight: 600; }
+  .bridge .line { flex: 1; height: 1px; background: var(--mac-border); }
+  .bridge .chip { height: 34px; font-size: 13.5px; background: var(--mac-win); }
+</style>
+</head>
+<body>
+<div class="canvas app-neutral">
+
+  <div class="mac-menubar">
+    <span class="app-name">터미널</span><span>셸</span><span>편집</span><span>보기</span><span>윈도우</span>
+    <div class="extras">
+      <span class="extra"><img data-app="clipbridge" alt=""></span>
+      <span class="extra"><img data-app="foldmic" alt=""></span>
+      <span class="extra"><i data-icon="monitor"></i></span>
+      <span class="extra"><i data-icon="wifi"></i></span>
+      <span class="extra"><i data-icon="battery"></i></span>
+      <span class="clock">9월 28일 (월) 오후 2:30</span>
+    </div>
+  </div>
+
+  <div class="layout">
+
+    <!-- 폴드8 펼친 화면: 홈 화면에 랩의 앱들 -->
+    <div>
+      <div class="fold-open" style="--zoom:.8">
+        <div class="screen home">
+          <div class="status-bar" data-time="2:30" data-batt="82"></div>
+          <div class="clock-widget">
+            <div class="time">2:30</div>
+            <div class="date">9월 28일 월요일 · 맑음 21°</div>
+          </div>
+          <div class="app-folder">
+            <div class="folder-title">연동랩 <span class="meta">앱·도구 10개</span></div>
+            <div class="app-grid">
+              <div class="app-cell"><img data-app="clipbridge" alt=""><span class="name">ClipBridge</span></div>
+              <div class="app-cell"><img data-app="foldmic" alt=""><span class="name">폴드 마이크</span></div>
+              <div class="app-cell"><span class="gen-ico stt"><i data-icon="file-text"></i></span><span class="name">온디바이스 STT</span></div>
+              <div class="app-cell"><img data-app="cyberdeck" alt=""><span class="name">사이버덱</span></div>
+              <div class="app-cell"><span class="gen-ico deskpad"><i data-icon="monitor"></i></span><span class="name">DeskPad Fold</span></div>
+              <div class="app-cell"><img data-app="foldagent" alt=""><span class="name">폴드 에이전트</span></div>
+              <div class="app-cell"><img data-app="cmux" alt=""><span class="name">관제실</span></div>
+              <div class="app-cell"><img data-app="cchistory" alt=""><span class="name">Claude 기록</span></div>
+              <div class="app-cell"><img data-app="pinback" alt=""><span class="name">핀백</span></div>
+              <div class="app-cell"><span class="gen-ico cli"><i data-icon="terminal"></i></span><span class="name">CLI 앱 스킬</span></div>
+            </div>
+          </div>
+          <div class="widgets">
+            <div class="widget app-clipbridge"><div class="w-head"><img data-app="clipbridge" alt="">ClipBridge</div><div class="w-main">장보기 목록</div><div class="meta"><span class="dot ok"></span> 맥에서 받음 · 3초 전</div></div>
+            <div class="widget app-foldmic"><div class="w-head"><img data-app="foldmic" alt="">폴드 마이크</div><div class="w-main">맥 입력으로 쓰는 중</div><div class="meta"><span class="dot accent"></span> 노트북 · 12분째</div></div>
+          </div>
+          <div class="search-pill"><i data-icon="search"></i>검색</div>
+          <div class="dock"><span class="d-ico"><i data-icon="message"></i></span><span class="d-ico"><i data-icon="image"></i></span><span class="d-ico"><i data-icon="calendar"></i></span><span class="d-ico"><i data-icon="settings"></i></span></div>
+          <div class="page-dots"><i></i><i class="on"></i><i></i></div>
+          <div class="nav-handle"></div>
+        </div>
+      </div>
+      <div class="device-label">갤럭시 Z 폴드8 · 펼친 화면</div>
+    </div>
+
+    <!-- 맥 -->
+    <div class="mac-col">
+      <div class="bridge"><span class="line"></span><span class="chip"><i data-icon="lock"></i>Tailscale</span><span class="chip"><i data-icon="wifi"></i>무선 adb</span><span class="chip"><i data-icon="refresh"></i>Syncthing</span><span class="line"></span></div>
+      <div class="terminal">
+        <div class="terminal-bar"><span class="traffic"><i></i><i></i><i></i></span><span class="t-title">zsh — 맥북</span></div>
+        <div class="terminal-body"><span class="t-prompt">❯</span> <span class="t-b">clip2phone "장보기 목록"</span>
+<span class="t-ok">✓</span> 폰 클립보드에 넣음 <span class="t-dim">(1.2초)</span>
+<span class="t-prompt">❯</span> <span class="t-b">file2phone 회의메모.pdf</span>
+<span class="t-ok">✓</span> 폰 「다운로드」에 저장 <span class="t-dim">· 알림을 누르면 열림</span>
+<span class="t-prompt">❯</span> <span class="t-b">phone-stt 주간회의.m4a</span>
+<span class="t-accent">▶</span> 6/6 공유 시트로 전문 회수
+<span class="t-ok">✓</span> 주간회의.txt <span class="t-dim">(1,220자 · 화자 3명)</span>
+<span class="t-prompt">❯</span> <span class="t-b">foldmic on</span>
+<span class="t-ok">✓</span> 맥 기본 입력 → 폴드8 마이크
+<span class="t-prompt">❯</span> <span class="t-b">./gradlew installDebug</span>
+<span class="t-dim">  무선 adb 로 설치 중…</span>
+<span class="t-ok">BUILD SUCCESSFUL</span> <span class="t-dim">in 14s</span>
+<span class="t-prompt">❯</span> <span class="t-cursor"></span></div>
+      </div>
+      <div class="mac-notification">
+        <img data-app="clipbridge" alt="">
+        <div>
+          <div class="n-top"><span class="n-title">ClipBridge</span><span class="n-time">지금</span></div>
+          <div class="n-body">폰에서 이미지를 받았습니다 · 화이트보드 사진</div>
+        </div>
+      </div>
+      <div class="device-label" style="margin-top:0">맥북 · 같은 tailnet</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

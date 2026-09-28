@@ -1,0 +1,71 @@
+/* 허브 목업 공용 — 홈 화면(런처) 부품. 색은 킷 토큰만 쓴다. */
+
+/* 홈 화면 배경: 은은한 그라데이션 */
+.home {
+  background:
+    radial-gradient(120% 80% at 20% 10%, light-dark(#E6EEF6, #1A2230) 0%, transparent 60%),
+    radial-gradient(90% 70% at 90% 90%, light-dark(#E9E4F4, #221B2E) 0%, transparent 65%),
+    light-dark(#EEF2F6, #12151B);
+}
+.home .status-bar { background: transparent; }
+
+.clock-widget { padding: 18px 40px 0; }
+.clock-widget .time { font-size: 64px; line-height: 72px; font-weight: 300; letter-spacing: -2px; color: var(--text); font-variant-numeric: tabular-nums; }
+.clock-widget .date { font-size: 16px; line-height: 22px; color: var(--dim); margin-top: 2px; }
+
+/* 앱 모음 패널(폴더 펼친 모양) */
+.app-folder {
+  margin: 22px 28px 0; padding: 18px 12px 20px;
+  border-radius: 28px;
+  background: light-dark(rgba(255, 255, 255, .62), rgba(30, 34, 42, .72));
+  border: 1px solid var(--border);
+}
+.app-folder .folder-title { font-size: 17px; line-height: 24px; font-weight: 700; padding: 0 16px 10px; display: flex; align-items: center; gap: 8px; }
+.app-folder .folder-title .meta { font-weight: 400; }
+.app-grid { display: grid; grid-template-columns: repeat(5, 1fr); row-gap: 18px; }
+.app-cell { display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 0; }
+.app-cell img, .app-cell .gen-ico { width: 76px; height: 76px; border-radius: 22px; display: block; flex: none; }
+.app-cell .gen-ico { display: flex; }
+.app-cell .name { font-size: 13.5px; line-height: 18px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 140px; text-align: center; }
+
+/* 킷에 아이콘이 없는 프로젝트용: 패밀리 문법(검은 타일 + 대표색 글로우 + 기호 하나)을 흉내 낸 타일 */
+.gen-ico {
+  --c: #F59E0B;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(70% 70% at 50% 50%, color-mix(in srgb, var(--c) 26%, #0B0E12) 0%, #0B0E12 75%);
+  color: var(--c); font-size: 40px;
+}
+.gen-ico svg.i { stroke-width: 2.2; }
+.gen-ico.stt { --c: #FBBF24; }
+.gen-ico.deskpad { --c: #22D3EE; }
+.gen-ico.cli { --c: #FB923C; }
+
+.search-pill {
+  margin: 22px 40px 0; height: 52px; border-radius: 26px;
+  background: light-dark(rgba(255, 255, 255, .7), rgba(30, 34, 42, .72));
+  border: 1px solid var(--border);
+  display: flex; align-items: center; gap: 10px; padding: 0 20px; color: var(--dim); font-size: 15px;
+}
+.page-dots { display: flex; justify-content: center; gap: 8px; margin-top: auto; padding-bottom: 12px; }
+.page-dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--dim); opacity: .35; }
+.page-dots i.on { opacity: .9; }
+
+/* 맥 쪽 연결 표시 */
+.link-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.link-row .chip { background: var(--mac-win); }
+
+/* 위젯 두 개 나란히 */
+.widgets { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 28px 0; }
+.widget {
+  border-radius: 24px; padding: 16px 18px; display: flex; flex-direction: column; gap: 6px;
+  background: light-dark(rgba(255, 255, 255, .62), rgba(30, 34, 42, .72));
+  border: 1px solid var(--border);
+}
+.widget .w-head { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--dim); }
+.widget .w-head img { width: 22px; height: 22px; border-radius: 6px; }
+.widget .w-main { font-size: 18px; line-height: 24px; font-weight: 700; }
+/* 독 */
+.dock { display: flex; justify-content: center; gap: 30px; margin-top: auto; padding: 0 0 8px; }
+.dock .d-ico { width: 60px; height: 60px; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 28px;
+  background: light-dark(rgba(255, 255, 255, .75), rgba(40, 44, 52, .8)); border: 1px solid var(--border); color: var(--text); }
+.page-dots { margin-top: 18px; }
