@@ -17,9 +17,9 @@
 <!-- VIDEO:START -->
 ### 홍보 영상
 
-[![홍보 영상 (가로 16:9, 92초) — 누르면 재생 화면으로 갑니다](docs/images/video-poster.png)](docs/video/promo_16x9.mp4)
+[![홍보 영상 (가로 16:9, 120초) — 누르면 재생 화면으로 갑니다](docs/images/video-poster.png)](docs/video/promo_16x9.mp4)
 
-▶ [가로 16:9 · 92초](docs/video/promo_16x9.mp4) · ▶ [세로 9:16 · 72초](docs/video/promo_9x16.mp4) — 영상 속 화면은 설명용 목업입니다.
+▶ [가로 16:9 · 120초](docs/video/promo_16x9.mp4) · ▶ [세로 9:16 · 90초](docs/video/promo_9x16.mp4) — 영상 속 화면은 설명용 목업입니다.
 <!-- VIDEO:END -->
 
 이 저장소는 추커톤(AI & Beyond 추석 해커톤 2026) 출품작입니다.
