@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!-- 책상 장면 A(펼침·가로)의 맥 화면 영역 1.60 : 1 — 1200x750 @1.5 = 1800x1125 -->
+<meta name="shot" content="w=1200,h=750,scale=1.5">
+<title>책상 장면 — 맥 화면</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<style>
+  .canvas { --cw: 1200px; --ch: 750px;
+    background:
+      radial-gradient(90% 70% at 15% 0%, #DCE6F2 0%, transparent 60%),
+      radial-gradient(80% 80% at 100% 100%, #D9D3EC 0%, transparent 60%),
+      #E9EDF3; }
+  .canvas > .mac-menubar { height: 36px; font-size: 17px; gap: 22px; padding: 0 18px; }
+  .mac-menubar .extra { height: 28px; font-size: 19px; }
+  .mac-menubar .extra img { width: 21px; height: 21px; }
+  .mac-menubar .clock { font-size: 17px; }
+
+  .terminal.big { position: absolute; left: 40px; top: 70px; width: 760px; height: auto; border-radius: 16px; }
+  .terminal.big .terminal-bar { height: 44px; }
+  .terminal.big .terminal-bar .t-title { font-size: 16px; }
+  .terminal.big .terminal-bar .traffic i { width: 14px; height: 14px; }
+  .terminal.big .terminal-body { font-size: 26px; line-height: 45px; padding: 24px 28px; }
+
+  .mac-notification.big { position: absolute; right: 26px; top: 56px; width: 360px;
+    grid-template-columns: 52px 1fr; gap: 14px; padding: 16px 18px; border-radius: 22px; font-size: 18px; line-height: 25px; }
+  .mac-notification.big > img { width: 52px; height: 52px; border-radius: 12px; }
+  .mac-notification.big .n-title { font-size: 19px; }
+  .mac-notification.big .n-time { font-size: 15px; }
+  .mac-notification.big + .mac-notification.big { top: 196px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <div class="mac-menubar">
+    <span class="app-name">터미널</span><span>셸</span><span>편집</span><span>보기</span>
+    <div class="extras">
+      <span class="extra"><img data-app="clipbridge" alt=""></span>
+      <span class="extra"><img data-app="foldmic" alt=""></span>
+      <span class="extra"><i data-icon="wifi"></i></span>
+      <span class="extra"><i data-icon="battery"></i></span>
+      <span class="clock">9월 28일 (월) 오후 2:30</span>
+    </div>
+  </div>
+
+  <div class="terminal big">
+    <div class="terminal-bar"><span class="traffic"><i></i><i></i><i></i></span><span class="t-title">zsh — 맥북</span></div>
+    <div class="terminal-body"><span class="t-prompt">❯</span> <span class="t-b">clip2phone "장보기 목록"</span>
+<span class="t-ok">✓</span> 폰 클립보드에 넣음 <span class="t-dim">1.2초</span>
+<span class="t-prompt">❯</span> <span class="t-b">file2phone 회의메모.pdf</span>
+<span class="t-ok">✓</span> 폰 「다운로드」에 저장
+<span class="t-prompt">❯</span> <span class="t-b">phone-stt 주간회의.m4a</span>
+<span class="t-ok">✓</span> 주간회의.txt <span class="t-dim">1,220자 · 화자 3명</span>
+<span class="t-prompt">❯</span> <span class="t-b">foldmic on</span>
+<span class="t-ok">✓</span> 맥 기본 입력 → 폴드8 마이크
+<span class="t-prompt">❯</span> <span class="t-b">./gradlew installDebug</span>
+<span class="t-ok">BUILD SUCCESSFUL</span> <span class="t-dim">무선 adb 설치 14초</span>
+<span class="t-prompt">❯</span> <span class="t-cursor"></span></div>
+  </div>
+
+  <div class="mac-notification big">
+    <img data-app="clipbridge" alt="">
+    <div>
+      <div class="n-top"><span class="n-title">ClipBridge</span><span class="n-time">지금</span></div>
+      <div class="n-body">폰에서 이미지를 받았습니다<br>화이트보드 사진.jpg</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

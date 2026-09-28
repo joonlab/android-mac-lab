@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!-- 책상 장면 A: 폴드8 펼친 화면(가로) 영역 1.35 : 1 — 900x665 @2 = 1800x1330 -->
+<meta name="shot" content="w=900,h=665,scale=2">
+<title>책상 장면 — 폴드8 펼친 화면</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<link rel="stylesheet" href="../_hub.css">
+<style>
+  .canvas { --cw: 900px; --ch: 665px; background: #EEF2F6; }
+  .screen.home { position: absolute; inset: 0; }
+  .home .status-bar { height: 40px; font-size: 18px; padding: 0 28px; }
+  .home .status-bar .sb-icons { font-size: 20px; }
+  .home .status-bar .sb-batt { font-size: 16px; }
+
+  .top-row { display: flex; align-items: baseline; gap: 18px; padding: 8px 34px 0; }
+  .top-row .time { font-size: 58px; line-height: 64px; font-weight: 300; letter-spacing: -2px; font-variant-numeric: tabular-nums; }
+  .top-row .date { font-size: 21px; color: var(--dim); }
+
+  .app-folder { margin: 18px 24px 0; padding: 18px 10px 22px; border-radius: 30px; }
+  .app-folder .folder-title { font-size: 23px; line-height: 30px; padding: 0 18px 12px; }
+  .app-folder .folder-title .meta { font-size: 19px; }
+  .app-grid { row-gap: 22px; }
+  .app-cell { gap: 7px; }
+  .app-cell img, .app-cell .gen-ico { width: 98px; height: 98px; border-radius: 27px; }
+  .app-cell .gen-ico { font-size: 50px; }
+  .app-cell .name { font-size: 19px; line-height: 24px; max-width: 170px; font-weight: 500; }
+
+  .widgets { margin: 20px 24px 0; gap: 16px; }
+  .widget { padding: 20px 22px; border-radius: 26px; gap: 6px; }
+  .widget .w-head { font-size: 18px; gap: 10px; }
+  .widget .w-head img { width: 28px; height: 28px; border-radius: 8px; }
+  .widget .w-main { font-size: 25px; line-height: 32px; }
+  .widget .meta { font-size: 17px; line-height: 22px; display: flex; align-items: center; gap: 8px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="screen home">
+    <div class="status-bar" data-time="2:30" data-batt="82"></div>
+    <div class="top-row"><span class="time">2:30</span><span class="date">9월 28일 월요일 · 맑음 21°</span></div>
+
+    <div class="app-folder">
+      <div class="folder-title">연동랩 <span class="meta">앱·도구 10개</span></div>
+      <div class="app-grid">
+        <div class="app-cell"><img data-app="clipbridge" alt=""><span class="name">ClipBridge</span></div>
+        <div class="app-cell"><img data-app="foldmic" alt=""><span class="name">폴드 마이크</span></div>
+        <div class="app-cell"><span class="gen-ico stt"><i data-icon="file-text"></i></span><span class="name">온디바이스 STT</span></div>
+        <div class="app-cell"><img data-app="cyberdeck" alt=""><span class="name">사이버덱</span></div>
+        <div class="app-cell"><span class="gen-ico deskpad"><i data-icon="monitor"></i></span><span class="name">DeskPad Fold</span></div>
+        <div class="app-cell"><img data-app="foldagent" alt=""><span class="name">폴드 에이전트</span></div>
+        <div class="app-cell"><img data-app="cmux" alt=""><span class="name">관제실</span></div>
+        <div class="app-cell"><img data-app="cchistory" alt=""><span class="name">Claude 기록</span></div>
+        <div class="app-cell"><img data-app="pinback" alt=""><span class="name">핀백</span></div>
+        <div class="app-cell"><span class="gen-ico cli"><i data-icon="terminal"></i></span><span class="name">CLI 앱 스킬</span></div>
+      </div>
+    </div>
+
+    <div class="widgets">
+      <div class="widget app-clipbridge"><div class="w-head"><img data-app="clipbridge" alt="">ClipBridge</div><div class="w-main">장보기 목록</div><div class="meta"><span class="dot ok"></span> 맥에서 받음 · 3초 전</div></div>
+      <div class="widget app-foldmic"><div class="w-head"><img data-app="foldmic" alt="">폴드 마이크</div><div class="w-main">맥 입력으로 쓰는 중</div><div class="meta"><span class="dot accent"></span> 노트북 · 12분째</div></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
